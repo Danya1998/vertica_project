@@ -1,0 +1,1 @@
+INSERT INTO students(id, name, age) SELECT 1, 'Daniel', 22 UNION SELECT 2, 'stepa', 26;
