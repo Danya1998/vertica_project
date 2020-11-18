@@ -11,10 +11,9 @@ Then "connect to database and verify if ready db to query" do
 end
 
 When /^execute some sql script '([^"]*)'$/ do |script|
-  @client.sql_query('sql/insert.sql')
   @client.sql_query(script)
 end
 
-Then /^verify that user "([^"]*)" successfully added$/ do |name|
-  assert name == @client.value_of_field(0,"name")
+Then /^verify that all data inserted successfully$/ do
+  assert_equal(@client.data_in_database, @client.values_of_row)
 end

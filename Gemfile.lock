@@ -1,6 +1,11 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    activemodel (6.0.3.4)
+      activesupport (= 6.0.3.4)
+    activerecord (6.0.3.4)
+      activemodel (= 6.0.3.4)
+      activesupport (= 6.0.3.4)
     activesupport (6.0.3.4)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 0.7, < 2)
@@ -48,6 +53,7 @@ GEM
     ffi (1.13.1)
     i18n (1.8.5)
       concurrent-ruby (~> 1.0)
+    method_decorators (0.9.6)
     middleware (0.1.0)
     minitest (5.14.2)
     multi_test (0.1.2)
@@ -79,6 +85,7 @@ GEM
       ffi (~> 1.1)
     thor (1.0.1)
     thread_safe (0.3.6)
+    time (0.1.0)
     tzinfo (1.2.8)
       thread_safe (~> 0.1)
     unicode-display_width (1.7.0)
@@ -89,10 +96,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activerecord
   cucumber
   docker
+  method_decorators
   rake
   rubocop
+  time
   vertica
 
 BUNDLED WITH
