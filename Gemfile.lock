@@ -50,6 +50,7 @@ GEM
     diff-lcs (1.4.4)
     docker (0.4.0)
       backticks (~> 1.0.0)
+    exceptions (0.1.0)
     ffi (1.13.1)
     i18n (1.8.5)
       concurrent-ruby (~> 1.0)
@@ -99,6 +100,7 @@ DEPENDENCIES
   activerecord
   cucumber
   docker
+  exceptions
   method_decorators
   rake
   rubocop
