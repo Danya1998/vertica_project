@@ -20,6 +20,7 @@ class VerticaClient
     )
     @start_execution = Time.new
     @rows_in_database = []
+    #@start_execution = Time.new
   end
 
   # Check Vertica DB is available for query
