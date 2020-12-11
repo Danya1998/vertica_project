@@ -1,11 +1,8 @@
-Style/FrozenStringLiteralComment:
-  Enabled: false
-
 Metrics/LineLength:
-  Max: 120
-
-Style/Documentation:
-  Enabled: false
-
+  Max: 150
+Metrics/BlockLength:
+  Max: 100
 Metrics/MethodLength:
-  Max: 30
+  Max: 25
+Metrics/ClassLength:
+  Max: 150

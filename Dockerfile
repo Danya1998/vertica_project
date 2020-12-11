@@ -1,10 +1,14 @@
 FROM ruby:2.5
+
 RUN apt-get update
+RUN gem install bundle && gem install cucumber
 
-WORKDIR . /opt/project
+COPY . /opt/project/
 
-COPY Gemfile ./
+WORKDIR /opt/project/
+
+COPY Gemfile /opt/project/
+
 RUN bundle install
 
-COPY . /opt/project
-
+ENTRYPOINT ["bash", "start.sh"]
